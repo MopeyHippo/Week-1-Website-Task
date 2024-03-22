@@ -1,4 +1,4 @@
-html, body {
+ html, body, h1, h2, footer{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -7,18 +7,22 @@ html, body {
 h1 {
     display: block;
     font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
     font-weight: bold;
     
 }
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
 
 nav a {
     text-decoration: none;
     font-size: .85rem;
     font-weight: 700;
+    color: #fff;
 }
 
 nav  {
@@ -98,10 +102,14 @@ background-image: url("./howls.webp");
 
 footer {
 position:fixed;
-color: #fff;
-display: flex;
-padding: 2.5rem 3rem;
+color: white;
+width: 100%;
+/* background-color: aquamarine; */
 gap: 3rem;
-z-index: 1;
+z-index: 10;
+display: flex;
+justify-content: center;
 }
+
+
 
