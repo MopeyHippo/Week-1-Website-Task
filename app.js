@@ -75,6 +75,7 @@ const changeLanguage = (event) => {
   document.getElementById("RM1").replaceChildren(RM[event.target.value]);
   document.getElementById("RM2").replaceChildren(RM[event.target.value]);
   document.getElementById("RM3").replaceChildren(RM[event.target.value]);
+  document.getElementById("RM4").replaceChildren(RM[event.target.value]);
   document.getElementById("SG9").replaceChildren(RM[event.target.value]);
   document.getElementById("SG").replaceChildren(SG[event.target.value]);
   document.getElementById("a1").replaceChildren(a1[event.target.value]);
