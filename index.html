@@ -11,44 +11,56 @@
 <body>
 
     <header>
-        <h1> Studio Ghibli</h1>
+        <h1 id="SG"> Studio Ghibli</h1>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Latest Release</a>
-            <a href="#">Filmography</a>
-            <a href="#">Shop</a>
-        </nav> 
+            <a id="a1" href="#about">Home</a>
+            <a id="a2" href="#about">About</a>
+            <a id="a3" href="#latestrelease">Latest Release</a>
+            <a id="a4" href="#filmography">Filmography</a>
+            <a id="a5" href="#shop">Shop</a>
+        </nav>
+        <select onchange="changeLanguage(event)">
+            <option value="en"> English</option>
+            <option value="jp"> 日本語</option>
+        </select>
+
     </header>
-        <main>
-            <section class="latestrelease common" >
-                
+    <main>
+        <section class="about common" id="about">
             <div class="post-meta">
-                    <h2 class="post-meta__tagline">Our Most Recent Projects</h2>
-                    <h1 class="post-meta__heading">Latest Release</h1>
-                    <a class="post-meta__more" href="#">Read more</a>
-                </div>
-            </section>
+                <h2 class="post-meta__tagline" id="AB1t">Learn More About Our History</h2>
+                <h1 class="post-meta__heading" id="AB1h">About</h1>
+                <a class="post-meta__more" id="RM1" href="#">Read more</a>
+            </div>
+        </section>
 
-            <section class="filmography common">
-                <div class="post-meta">
-                    <h2 class="post-meta__tagline">Dive into Our Back Catalogue</h2>
-                    <h1 class="post-meta__heading">Filmography</h1>
-                    <a class="post-meta__more" href="#">Read more</a>
-                </div>
-            </section>
+        <section class="latestrelease common" id="latestrelease">
+            <div class="post-meta">
+                <h2 class="post-meta__tagline" id="LR1t">Our Most Recent Projects</h2>
+                <h1 class="post-meta__heading" id="LR1h">Latest Release</h1>
+                <a class="post-meta__more" id="RM1" href="#">Read more</a>
+            </div>
+        </section>
 
-            <section class="shop common">
-                <div class="post-meta">
-                    <h2 class="post-meta__tagline">Check Out Whats New</h2>
-                    <h1 class="post-meta__heading">Shop Now</h1>
-                    <a class="post-meta__more" href="#">Read more</a>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <p>Studio Ghibli © 2024</p>
-            </footer>
+        <section class="filmography common" id="filmography">
+            <div class="post-meta">
+                <h2 class="post-meta__tagline" id="FC1t">Explore Our Back Catalogue</h2>
+                <h1 class="post-meta__heading" id="FC1h">Filmography</h1>
+                <a class="post-meta__more" id="RM2" href="#">Read more</a>
+            </div>
+        </section>
+
+        <section class="shop common" id="shop">
+            <div class="post-meta">
+                <h2 class="post-meta__tagline" id="SC1t">Check Out Whats New</h2>
+                <h1 class="post-meta__heading" id="SC1h">Shop Now</h1>
+                <a class="post-meta__more" id="RM3" href="#">Read more</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p id="SG9">Studio Ghibli © 2024</p>
+    </footer>
 </body>
 <script src="./app.js"></script>
 
